@@ -18,7 +18,6 @@ ciudad_ingresada=$(echo "$ciudad_ini" | tr ' ' '%20')
 # URL de la API
 url="http://api.weatherapi.com/v1/current.json?key=$apiKEY&q=$ciudad_ingresada&aqi=no"
 
-# Hacer la solicitud GET a la API y guardar la respuesta en un archivo JSON
 curl --silent --request GET "$url" --output respuesta.json
 
 if [ -s respuesta.json ]; then
