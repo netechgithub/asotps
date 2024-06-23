@@ -16,7 +16,7 @@ read -p "Ingrese una ciudad para saber su clima actual: " ciudad_ini
 ciudad_ingresada=$(echo "$ciudad_ini" | tr ' ' '%20')
 
 # URL de la API
-url="http://api.weatherapi.com/v1/current.json?key=$apiKEY&q=$ciudad_ingresada&aqi=no"
+url="http://api.weatherapi.com/v1/current.json?key=$apiKEY&q=$ciudad_ingresada&aqi=no&lang=es"
 
 curl --silent --request GET "$url" --output respuesta.json
 
