@@ -13,8 +13,9 @@ Una condición de carrera ocurre cuando el resultado de una operación depende d
 
 Para ilustrarlo mejor, imagina dos personas intentando escribir en la misma hoja de papel al mismo tiempo sin coordinarse entre sí. El resultado final en el papel dependerá de quién escribió más rápido o quién interfirió con el otro en un momento dado. De manera similar, sin una coordinación adecuada en el acceso a la variable "acumulador", los hilos pueden sobrescribir los cambios de los otros, causando resultados inconsistentes.
 
+2)A) 
 
-2)A) #include <pthread.h>
+#include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
 #define NUMBER_OF_THREADS 2
